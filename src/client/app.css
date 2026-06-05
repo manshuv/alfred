@@ -1,0 +1,276 @@
+/* Import Caveat font from jsDelivr with fallbacks */
+@import url('https://cdn.jsdelivr.net/npm/@fontsource/caveat@5.0.18/index.css');
+
+/* Global chalkboard theme */
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Caveat', 'Comic Sans MS', cursive, sans-serif;
+  background-color: #3A3D4A;
+  color: #F0EDE4;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+  background-color: #3A3D4A;
+}
+
+.dashboard {
+  background-color: #3A3D4A;
+  min-height: 100vh;
+  padding: 24px;
+  color: #F0EDE4;
+  font-family: 'Caveat', 'Comic Sans MS', cursive, sans-serif;
+}
+
+.loading, .error {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 50px;
+  color: #F0EDE4;
+}
+
+.error {
+  color: #ff6b6b;
+}
+
+/* Dashboard dividers */
+.dashboard-divider {
+  height: 2px;
+  background: linear-gradient(to right, transparent, #7A8299, transparent);
+  margin: 32px 0;
+  opacity: 0.6;
+}
+
+/* Header styles */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.date-range {
+  font-size: 20px;
+  color: #7A8299;
+  font-weight: 400;
+}
+
+.hero-metric {
+  text-align: center;
+}
+
+.hero-metric-label {
+  font-size: 18px;
+  color: #7A8299;
+  margin-bottom: 8px;
+}
+
+.hero-metric-value {
+  font-size: 48px;
+  font-weight: bold;
+  color: #F0EDE4;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.period-toggles {
+  display: flex;
+  gap: 8px;
+}
+
+.period-button {
+  background: transparent;
+  border: 2px solid #7A8299;
+  color: #7A8299;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: 'Caveat', 'Comic Sans MS', cursive, sans-serif;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.period-button:hover {
+  border-color: #F0EDE4;
+  color: #F0EDE4;
+}
+
+.period-button.active {
+  background-color: #F0EDE4;
+  color: #3A3D4A;
+  border-color: #F0EDE4;
+}
+
+/* Metrics section */
+.metrics-section {
+  margin: 32px 0;
+}
+
+.section-title {
+  font-size: 28px;
+  color: #F0EDE4;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.metrics-grid {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.metric-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 24px;
+  min-width: 200px;
+  text-align: center;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.metric-header {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.metric-percentage {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.metric-hours {
+  font-size: 16px;
+  color: #7A8299;
+  margin-bottom: 16px;
+}
+
+.metric-bar {
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.metric-bar-fill {
+  height: 100%;
+  transition: width 0.5s ease;
+  border-radius: 4px;
+}
+
+/* Recent activities */
+.recent-activities {
+  margin-top: 32px;
+}
+
+.activities-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.activity-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.activity-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.activity-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.activity-name {
+  font-size: 18px;
+  color: #F0EDE4;
+}
+
+.category-pill {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.category-pill.only-me {
+  background-color: #E8C840;
+  color: #3A3D4A;
+}
+
+.category-pill.delegate-now {
+  background-color: #8B9DC0;
+  color: #F0EDE4;
+}
+
+.category-pill.delegate-later {
+  background-color: #9B7AC0;
+  color: #F0EDE4;
+}
+
+.activity-duration {
+  font-size: 16px;
+  color: #7A8299;
+  font-weight: bold;
+}
+
+/* Debug info */
+.debug-info {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0,0,0,0.7);
+  color: #F0EDE4;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  z-index: 1000;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 16px;
+  }
+  
+  .dashboard-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .metrics-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .metric-card {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .hero-metric-value {
+    font-size: 36px;
+  }
+  
+  .period-toggles {
+    justify-content: center;
+  }
+}
