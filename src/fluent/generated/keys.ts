@@ -110,6 +110,25 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '111eba25831d4f902a3771647daad306'
+                        key: {
+                            sys_ui_section: '151e7a25831d4f902a3771647daad3b1'
+                            element: '.begin_split'
+                            position: '3'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_section'
+                        id: '151e7a25831d4f902a3771647daad3b1'
+                        key: {
+                            name: 'x_snc_alfred_time_entries'
+                            caption: 'NULL'
+                            view: 'NULL'
+                            sys_domain: 'global'
+                        }
+                    },
+                    {
                         table: 'sn_glider_source_artifact_m2m'
                         id: '1797663647d648dfb4a2171f7e3904c6'
                         key: {
@@ -146,6 +165,15 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '1d1eba25831d4f902a3771647daad308'
+                        key: {
+                            sys_ui_section: '151e7a25831d4f902a3771647daad3b1'
+                            element: '.end_split'
+                            position: '7'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '1e59e67c57eb4dc5a262bbe540439318'
                         key: {
@@ -159,6 +187,15 @@ declare global {
                         id: '21fc8bab586e4253b58a828261eacb67'
                         key: {
                             name: 'x_snc_alfred/main'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '27d5dfdb169643cfa8e9634cd9ca2434'
+                        key: {
+                            name: 'x_snc_alfred_time_entries'
+                            element: 'work_type'
+                            language: 'en'
                         }
                     },
                     {
@@ -254,6 +291,50 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_dictionary'
+                        id: '4e66a9d2e1004b8690bd4e4c62923617'
+                        key: {
+                            name: 'x_snc_alfred_time_entries'
+                            element: 'work_type'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '510145b48b9840e6a3a55b274689ccae'
+                        key: {
+                            sys_ui_section: '151e7a25831d4f902a3771647daad3b1'
+                            element: 'work_type'
+                            position: '8'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '511eba25831d4f902a3771647daad308'
+                        key: {
+                            sys_ui_section: '151e7a25831d4f902a3771647daad3b1'
+                            element: 'date'
+                            position: '6'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '5400270a549a456dbd62c0e478730263'
+                        key: {
+                            name: 'x_snc_alfred_time_entries'
+                            element: 'work_type'
+                            value: 'external'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '551eba25831d4f902a3771647daad305'
+                        key: {
+                            sys_ui_section: '151e7a25831d4f902a3771647daad3b1'
+                            element: 'notes'
+                            position: '2'
+                        }
+                    },
+                    {
                         table: 'sys_choice_set'
                         id: '61f187986bb64448b25f5095b3c116aa'
                         key: {
@@ -294,12 +375,47 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '951eba25831d4f902a3771647daad307'
+                        key: {
+                            sys_ui_section: '151e7a25831d4f902a3771647daad3b1'
+                            element: '.split'
+                            position: '5'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '98494ca7ce5d4107874e3867a68aa631'
                         key: {
                             name: 'x_snc_alfred_time_entries'
                             element: 'category'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '991abaa9be7445b0b2484fe561a5940f'
+                        key: {
+                            name: 'x_snc_alfred_time_entries'
+                            element: 'work_type'
+                            value: 'internal'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '991eba25831d4f902a3771647daad304'
+                        key: {
+                            sys_ui_section: '151e7a25831d4f902a3771647daad3b1'
+                            element: 'duration_hours'
+                            position: '1'
+                        }
+                    },
+                    {
+                        table: 'sys_choice_set'
+                        id: '9c86885703d44f6495027d7760cbd9c2'
+                        key: {
+                            name: 'x_snc_alfred_time_entries'
+                            element: 'work_type'
                         }
                     },
                     {
@@ -316,6 +432,24 @@ declare global {
                             name: 'x_snc_alfred_time_entries'
                             element: 'category'
                             value: 'delegate_now'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'd51e7a25831d4f902a3771647daad3b8'
+                        key: {
+                            sys_ui_section: '151e7a25831d4f902a3771647daad3b1'
+                            element: 'activity_description'
+                            position: '0'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'd91eba25831d4f902a3771647daad306'
+                        key: {
+                            sys_ui_section: '151e7a25831d4f902a3771647daad3b1'
+                            element: 'category'
+                            position: '4'
                         }
                     },
                     {

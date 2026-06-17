@@ -75,3 +75,12 @@ Record({
         type: '.end_split',
     },
 })
+Record({
+    $id: Now.ID['work_type_ui_element'],
+    table: 'sys_ui_element',
+    data: {
+        element: 'work_type',
+        position: 8,
+        sys_ui_section: '151e7a25831d4f902a3771647daad3b1',
+    },
+})
