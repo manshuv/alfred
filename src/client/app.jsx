@@ -192,6 +192,11 @@ export default function App() {
                   <div className={`category-pill ${display(entry.category).toLowerCase().replace(' ', '-')}`}>
                     {display(entry.category)}
                   </div>
+                  {display(entry.work_type) && (
+                    <div className={`work-type-pill ${display(entry.work_type).toLowerCase()}`}>
+                      {display(entry.work_type)}
+                    </div>
+                  )}
                 </div>
                 <div className="activity-duration">
                   {parseFloat(display(entry.duration_hours) || 0).toFixed(1)}h

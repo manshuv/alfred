@@ -226,6 +226,25 @@ body, html {
   color: #F0EDE4;
 }
 
+.work-type-pill {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  border: 2px solid transparent;
+}
+
+.work-type-pill.internal {
+  background-color: transparent;
+  border-color: #7A8299;
+  color: #F0EDE4;
+}
+
+.work-type-pill.external {
+  background-color: #6BAF92;
+  color: #3A3D4A;
+}
+
 .activity-duration {
   font-size: 16px;
   color: #7A8299;

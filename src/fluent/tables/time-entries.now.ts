@@ -37,10 +37,25 @@ export const x_snc_alfred_time_entries = Table({
                 }
             }
         }),
-        notes: StringColumn({ 
-            label: 'Notes', 
-            maxLength: 1000, 
-            mandatory: false 
+        work_type: ChoiceColumn({
+            label: 'Work Type',
+            mandatory: false,
+            dropdown: 'dropdown_with_none',
+            choices: {
+                internal: {
+                    label: 'Internal',
+                    sequence: 0
+                },
+                external: {
+                    label: 'External',
+                    sequence: 1
+                }
+            }
+        }),
+        notes: StringColumn({
+            label: 'Notes',
+            maxLength: 1000,
+            mandatory: false
         })
     },
     allow_web_service_access: true,
